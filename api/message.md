@@ -1,4 +1,6 @@
-## 目前还没有加上Token校验，TODO的都得改
+## 消息接口文档
+正式环境：https://helper.jx3box.com/api/
+目前还没有加上Token校验，TODO的都得改
 
 ### 创建用户消息（TODO）
 POST /messages
