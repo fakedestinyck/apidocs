@@ -27,5 +27,6 @@
 [Usermeta](https://github.com/JX3BOX/apidocs/blob/master/api/usermeta.md)|用户扩展表接口
 [User](https://github.com/JX3BOX/apidocs/blob/master/api/account.md)|用户信息接口
 [消息服务](https://github.com/JX3BOX/apidocs/blob/master/api/message.md)|PHP消息服务接口
+[Spider](https://github.com/JX3BOX/apidocs/blob/master/api/spider.md)|边缘应用服务接口
 
 ## 公开API
