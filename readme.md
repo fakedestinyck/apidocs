@@ -15,14 +15,17 @@
 
 
 ## 前端API
-MD|说明
+名称|说明
 ---|---
-[用户信息本地缓存](https://github.com/JX3BOX/apidocs/blob/master/api/user.md) | 通过localstorage调用本地缓存的用户信息(UID,头像,昵称等),减少不必要的请求
+[用户信息本地缓存接口](https://github.com/JX3BOX/apidocs/blob/master/api/user.md) | 通过localstorage调用本地缓存的用户信息(UID,头像,昵称等),减少不必要的请求
 [第三方登录授权](https://github.com/JX3BOX/apidocs/blob/master/api/oauth.md) | 提供给第三方应用或跨项目账号登录
 
 
 ## 后端API
-MD|说明
+名称|说明
 ---|---
-[用户接口](https://github.com/JX3BOX/apidocs/blob/master/api/account.md)|公开用户信息接口,获取头像等简要信息(无需鉴权)
-[消息接口](https://github.com/JX3BOX/apidocs/blob/master/api/message.md)|PHP消息服务接口
+[Usermeta](https://github.com/JX3BOX/apidocs/blob/master/api/usermeta.md)|用户扩展表接口
+[User](https://github.com/JX3BOX/apidocs/blob/master/api/account.md)|用户信息接口
+[消息服务](https://github.com/JX3BOX/apidocs/blob/master/api/message.md)|PHP消息服务接口
+
+## 公开API
