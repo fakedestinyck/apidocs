@@ -2,8 +2,7 @@
 边缘应用，西南节点
 
 ## 说明
-更新common公告库至最新版  
-`npm install @jx3box/jx3box-common`
+更新common公告库至最新版  `npm install @jx3box/jx3box-common`
 1. 前端接口地址引入请统一使用
 ```javascript
 const {JX3BOX} = require('@jx3box/jx3box-common')
