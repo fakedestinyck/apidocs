@@ -1,11 +1,11 @@
 ## 鉴权说明
 
 ### SSO
-默认单点登录地址 v2.jx3box.com/account/login   
-所有鉴权服务接口，请先在 v2.jx3box.com/account/login 进行登录
+默认单点登录地址 [v2.jx3box.com/account/login]   
+所有鉴权服务接口，请先在 [v2.jx3box.com/account/login] 进行登录
 
 ### Token
-1. 分配`.jx3box.com`跨域cookie，cookie name 为 `token` 
+1. 会分配`.jx3box.com`跨域cookie，cookie name 为 `token` 
 2. 同时会给`v2.jx3box.com`的localstorage添加`token`项
 
 ### 本地模拟
