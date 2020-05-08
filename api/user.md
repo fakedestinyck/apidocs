@@ -71,7 +71,7 @@ let uuid = User.getUUID()
 用户不主动清除将会保持不变（即设备ID），无需登录即可读取
 
 
-### 5.重置销毁 `User.destory()`
+### 5.重置销毁 `User.destroy()`
 对于token失效或无效，总是返回错误码***9999***，当遇到9999时，可能由于卡在令牌失效的边界区，本地静态前端缓存并未做检测，此时提交请求可能出现失败，如遇到此情况应总是设定清除本地用户缓存信息，并引导用户重新登录。
 
 注意为了让用户登录后重新返回当前提交页面，需要携带`redirect=callback`以指定回调。
@@ -83,7 +83,7 @@ let uuid = User.getUUID()
         if(err.response.data.code == 9999){
 
             //1.注销
-            User.destory()
+            User.destroy()
 
             //2.保存未提交成功的信息
             //请保存至IndexedDB,勿占用localstorage
