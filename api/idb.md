@@ -21,5 +21,12 @@ DB.getItem(key,val)
 DB.setItem(key,val)
 DB.removeItem(key)
 DB.clear()
+DB.iterate(function(val, key, i) {
+    console.log([key, val]);
+}).then(function() {
+    console.log('Iteration has completed');
+}).catch(function(err) {
+    console.log(err);
+});
 ```
 [更多信息](https://localforage.docschina.org/#localforage)
