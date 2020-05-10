@@ -55,8 +55,8 @@ axios
         //鉴权成功
     })
     .catch((err) => {
-        if(err.response.data.code == 9999){
-            //无效令牌
+        if(err.response.data){
+            //有响应,可能无效令牌或非法操作
         }else{
             //网络异常
         }
@@ -76,29 +76,6 @@ let uuid = User.getUUID()
 
 注意为了让用户登录后重新返回当前提交页面，需要携带`redirect=callback`以指定回调。
 再跳转至登录之前，发布页面等应在跳转前预先将内容临时存储在IndexedDB。
-```javascript
-.catch((err) => {
-    if(err.response.data.code){
-        //无效令牌
-        if(err.response.data.code == 9999){
-
-            //1.注销
-            User.destroy()
-
-            //2.保存未提交成功的信息
-            //请保存至IndexedDB,勿占用localstorage
-
-            //3.跳转至登录页携带redirect
-            //如果使用异步保存，请在回调中执行
-            User.toLogin(url) 
-            //不指定url时则自动跳回当前所在页面
-
-        }
-    }else{
-        //网络异常
-    }
-}); 
-```
 
 ### 6.跳转登录并转回 `User.toLogin()`
 ```javascript

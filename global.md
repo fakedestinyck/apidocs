@@ -25,4 +25,3 @@ share|捏脸分享
 tool|教程工具
 post|茶馆交流
 help|帮助文档
-page|系统页面
