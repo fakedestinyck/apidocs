@@ -35,7 +35,7 @@ os |中台| helper.jx3box.com | 苦瓜
 [Api](https://github.com/JX3BOX/jx3box-api/blob/master/README.md)|评论订阅关注接口|api.jx3box.com|老胡
 
 ## 前端API
-名称|说明|开发人员|
----|---|---|---|
-[用户缓存信息](https://github.com/JX3BOX/apidocs/blob/master/api/user.md) | 通过localstorage调用本地缓存的用户信息(UID,头像,昵称等),减少不必要的请求 | 浮烟
+名称|说明|开发人员
+---|---|---
+[用户缓存信息](https://github.com/JX3BOX/apidocs/blob/master/api/user.md) | 通过localstorage调用本地缓存的用户信息 | 浮烟
 [内容缓存数据库](https://github.com/JX3BOX/apidocs/blob/master/api/idb.md) | 通过IndexedDB调用历史分析或存储数据 | 浮烟
