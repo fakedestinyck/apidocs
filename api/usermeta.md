@@ -7,12 +7,12 @@ GET https://server.jx3box.com/user/meta
 params_key|value_type|ex
 ---|---|---
 uid | int | 8
-key | varchar | jx3_servers 
+key | varchar或'' | jx3_servers 
 
 全部meta_key说明见[用户附表](https://github.com/JX3BOX/apidocs/blob/master/db/wp_usermeta.md)
 
 ### Response Schema
-#### 成功 200
+#### 指定key时返回单个字段值
 ```json
 {
     "msg": "用户字段查询成功",
@@ -25,12 +25,19 @@ key | varchar | jx3_servers
 }
 ```
 
-#### 失败 400
-自行根据response区分网络异常与返回异常
+#### 不指定key时返回全部字段
 ```json
 {
-    "msg": "非法请求",
-    "code": 9999
+    "msg": "用户字段查询成功",
+    "code": 10050,
+    "data": {
+        "uid": "8",
+        "meta": {
+            "jx3_servers": "晴昼海,鹰击长空",
+            "favicon": "1,2,3"
+        }
+        
+    }
 }
 ```
 
@@ -44,11 +51,12 @@ body json key|value_type|ex
 uid | int | 8
 key | varchar | jx3_servers 
 value | varchar | "晴昼海,鹰击长空" 
+meta | object | key-val pair 
 
 全部meta_key说明见[用户附表](https://github.com/JX3BOX/apidocs/blob/master/db/wp_usermeta.md)
 
 ### Response Schema
-#### 成功 200
+#### 设置单个字段
 ```json
 {
     "msg": "用户字段修改成功",
@@ -61,16 +69,17 @@ value | varchar | "晴昼海,鹰击长空"
 }
 ```
 
-#### 失败 400
-自行根据response区分网络异常与返回异常
+#### 设置多个字段
 ```json
 {
-    "msg": "用户字段修改失败",
-    "code": 10051,
+    "msg": "用户字段修改成功",
+    "code": 10052,
     "data": {
         "uid": "8",
-        "key": "jx3_servers",
-        "value": "晴昼海"
+        "meta": {
+            "jx3_servers": "晴昼海",
+            "favicons":"4,5,6"
+        }
     }
 }
 ```
