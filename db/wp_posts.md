@@ -11,6 +11,7 @@ post_content | longtext | 文章内容
 post_type | varchar | 文章类别 [释义详见](https://github.com/JX3BOX/apidocs/blob/master/global.md)
 post_excerpt | text | 文章摘要
 post_status | varchar | 文章状态 
+post_mode | varchar | 编辑模式(tinymce|markdown) 
 
 ## post_status 文章发布状态
 + publish 已发布
