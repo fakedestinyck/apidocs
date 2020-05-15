@@ -25,21 +25,20 @@
 
 
 ## 后端API
-名称|说明|域|开发人员|
+名称|说明|域|开发人员|  
 ---|---|---|---|
 [User](https://github.com/JX3BOX/apidocs/blob/master/api/account.md)|用户基础信息接口|server.jx3box.com|浮烟
 [Usermeta](https://github.com/JX3BOX/apidocs/blob/master/api/usermeta.md)|用户扩展信息接口|server.jx3box.com|浮烟
 [OAuth](https://github.com/JX3BOX/apidocs/blob/master/api/oauth.md) | 提供给第三方应用或跨项目账号登录|server.jx3box.com|浮烟
----|---|---|---|
+Extend|---|---|---|
 [Api](https://github.com/JX3BOX/jx3box-api/blob/master/README.md)|评论/订阅/关注接口|api.jx3box.com|老胡
 [Message](https://github.com/JX3BOX/apidocs/blob/master/api/message.md)|消息通知|helper.jx3box.com |苦瓜
 os |中台| helper.jx3box.com | 苦瓜
----|---|---|---|
 -- |成就| helper.jx3box.com | 苦瓜
+App|---|---|---|
 [Spider](https://github.com/JX3BOX/apidocs/blob/master/api/spider.md)|边缘应用服务接口|spider.jx3box.com|浮烟
 [Node](https://github.com/JX3BOX/apidocs/blob/master/api/node.md)|核心应用服务接口|node.jx3box.com|浮烟
----|---|---|---|
-
+[Hub](https://github.com/JX3BOX/jx3box-api/blob/master/README.md)|仓库服务接口|hub.jx3box.com|老胡
 
 ## 前端API
 名称|说明|开发人员
