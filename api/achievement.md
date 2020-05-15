@@ -1,4 +1,4 @@
-## 消息接口文档
+## 成就接口文档
 正式环境：https://helper.jx3box.com/api/
 
 ### 查询成就
