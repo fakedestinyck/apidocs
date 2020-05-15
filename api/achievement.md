@@ -14,10 +14,12 @@ Accept | application/prs.helper.v2+json | 是
 参数 | 类型 | 必填 | 说明 | 例子
 ---|---|---|---|---
 dungeon_id | int | 否 | 副本ID | 177
+dungeon_name | int | 否 | 副本名字 | 敖龙岛
 boss_id | int | 否 | BossID | 26119
+boss_name | int | 否 | Boss名字 | 方有崖
 series_level | int | 否 | 成就系列类型。<br>默认：`全部`； `1`：常规  `2`：五甲 | 1
 page | int | 否 | 页码。默认：`1` | 1
-limit | int | 否 | 每页个数。默认：`15` | 2
+limit | int | 否 | 每页个数。默认：`10` | 2
 
 ##### 请求
 
