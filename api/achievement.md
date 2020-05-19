@@ -142,3 +142,131 @@ limit | int | 否 | 每页个数。默认：`10` | 2
     "message": "成就列表"
 }
 ```
+
+### 根据关键字搜索成就名、描述、奖励
+GET /achievement/search
+
+##### 请求头
+键 | 值 | 必填
+---|---|---
+Accept | application/prs.helper.v2+json | 是
+
+##### 请求参数
+
+参数 | 类型 | 必填 | 说明 | 例子
+---|---|---|---|---
+keyword | int | 否 | 搜索关键字 | 无伤
+page | int | 否 | 页码。默认：`1` | 1
+limit | int | 否 | 每页个数。默认：`15` | 2
+
+##### 请求
+
+```
+{
+    "keyword": "无伤",
+    "limit": 2
+}
+```
+
+##### 响应
+
+```
+# 成功
+{
+    "code": 200,
+    "data": {
+        "achievements": [
+            {
+                "ID": 1404,
+                "TriggerVal": "1",
+                "ShiftID": "1135",
+                "ShiftType": "2",
+                "Point": "30",
+                "Exp": "6900",
+                "Note": "毫发无伤",
+                "Prefix": null,
+                "Postfix": null,
+                "IsSplendid": "0",
+                "AnnounceType": "0",
+                "General": "1",
+                "Sub": "11",
+                "Detail": "143",
+                "Visible": 1,
+                "IconID": "2132",
+                "SubAchievements": null,
+                "Counters": null,
+                "Name": "毫发无伤",
+                "ShortDesc": "宫中神武遗迹全队无重伤通关",
+                "Desc": "宫中神武遗迹全队无重伤通关",
+                "Message": null,
+                "ItemType": "0",
+                "ItemID": "0",
+                "ItemName": null,
+                "Series": "",
+                "SeriesLevel": 1,
+                "HolidayID": null,
+                "BossID": null,
+                "BossName": null,
+                "SceneID": "61",
+                "LayerName": "10人普通",
+                "SceneName": "宫中神武遗迹",
+                "ShowGetNew": "1",
+                "dwDLCID": "1",
+                "dwMapID": "10",
+                "bDLCOther": null,
+                "PrefixName": null,
+                "PostfixName": null,
+                "SubAchievementList": null,
+                "Item": null,
+                "SeriesAchievementList": null
+            },
+            {
+                "ID": 1765,
+                "TriggerVal": "1",
+                "ShiftID": "2432",
+                "ShiftType": "2",
+                "Point": "25",
+                "Exp": "5800",
+                "Note": "无伤！仙踪林",
+                "Prefix": null,
+                "Postfix": null,
+                "IsSplendid": "0",
+                "AnnounceType": "0",
+                "General": "1",
+                "Sub": "11",
+                "Detail": "146",
+                "Visible": 1,
+                "IconID": "2132",
+                "SubAchievements": null,
+                "Counters": null,
+                "Name": "无伤！仙踪林",
+                "ShortDesc": "普通仙踪林全队无重伤通关",
+                "Desc": "普通仙踪林全队无重伤通关",
+                "Message": null,
+                "ItemType": "0",
+                "ItemID": "0",
+                "ItemName": null,
+                "Series": "",
+                "SeriesLevel": 1,
+                "HolidayID": null,
+                "BossID": null,
+                "BossName": null,
+                "SceneID": "71",
+                "LayerName": "5人普通",
+                "SceneName": "仙踪林",
+                "ShowGetNew": "1",
+                "dwDLCID": "2",
+                "dwMapID": "102",
+                "bDLCOther": null,
+                "PrefixName": null,
+                "PostfixName": null,
+                "SubAchievementList": null,
+                "Item": null,
+                "SeriesAchievementList": null
+            }
+        ],
+        "total": 392
+    },
+    "message": "成就列表"
+}
+```
