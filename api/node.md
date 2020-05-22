@@ -34,7 +34,8 @@ advbuff/name/:name|根据Buff名称或描述查询Buff属性|advbuff/name/花语
 ---|---|---
 npc/id/:id|根据NPCID查询NPC|npc/id/1
 npc/name/:name|根据NPC名称或称谓查询NPC|npc/name/李倓
-npc/map/:map|根据地图查询NPC|npc/map/敖龙岛
+npc/map/:map|根据地图查询NPC，带分页|npc/map/敖龙岛
+npc2/:map|根据地图查询NPC，不带分页（返回全部）|npc2/范阳夜变
 
 ## 技能/Buff/NPC的精确搜索
 请求地址|说明|示例
